@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/HorizontalSeparator"/>
+    <ListView
+        android:id="@+id/instrument_custom_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:choiceMode="singleChoice"
+        android:layout_weight="1"/>
+    <LinearLayout style="@style/HorizontalSeparator"/>
+    <RadioGroup
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/instrument_custom_select_buttonGroup"
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <com.symbolic.pitchlab.UIRadioButton
+            android:id="@+id/instrument_custom_select_buttonLoad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="Load"
+            android:layout_weight="1"/>
+        <com.symbolic.pitchlab.UIRadioButton
+            android:id="@+id/instrument_custom_select_buttonNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="New"
+            android:layout_weight="1"/>
+        <com.symbolic.pitchlab.UIRadioButton
+            android:id="@+id/instrument_custom_select_buttonEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="Edit"
+            android:layout_weight="1"/>
+        <com.symbolic.pitchlab.UIRadioButton
+            android:id="@+id/instrument_custom_select_buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="Delete"
+            android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>

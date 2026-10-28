@@ -1,0 +1,17 @@
+package com.symbolic.pitchlab;
+
+import android.view.View;
+
+/* JADX INFO: loaded from: classes.dex */
+class as implements View.OnClickListener {
+    final /* synthetic */ ActivityOptions a;
+
+    as(ActivityOptions activityOptions) {
+        this.a = activityOptions;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public void onClick(View view) {
+        this.a.showDialog(110);
+    }
+}
